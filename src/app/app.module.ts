@@ -17,11 +17,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateEmpComponent } from './Components/update-emp/update-emp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterEmpComponent
+    RegisterEmpComponent,
+    UpdateEmpComponent
   ],
   imports: [
     BrowserModule,
