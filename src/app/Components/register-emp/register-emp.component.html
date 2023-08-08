@@ -1,0 +1,105 @@
+<div class="layout" fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex="64">
+        <h2>Employee Payroll Form</h2>
+        <form [formGroup]="registerForm" (ngSubmit)="OnSubmit()" class="form-content">
+            <div class="rows">
+                <div class="labels">
+                    <label >Name</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput type="name" placeholder="Name" formControlName="name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- <div>
+                <mat-form-field>
+                    <mat-label>Profile Img</mat-label>
+                    <input matInput placeholder="Profile pic" formControlName="profileImage">
+                </mat-form-field>
+            </div> -->
+            <div class="rows">
+                <div class="labels">
+                    <label>Profile Image</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="image1"><img src="../../../assets/pics/male1.png"></mat-radio-button>
+                            <mat-radio-button value="image2"><img src="../../../assets/pics/male2.png"></mat-radio-button>
+                            <mat-radio-button value="image3"><img src="../../../assets/pics/female1.png"></mat-radio-button>
+                            <mat-radio-button value="image4"><img src="../../../assets/pics/female2.png"></mat-radio-button>
+                        </mat-radio-group>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="rows">
+                <div  class="labels">
+                    <label >Gender</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="male">Male</mat-radio-button>
+                            <mat-radio-button value="female">Female</mat-radio-button>
+                        </mat-radio-group>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="rows">
+                <div  class="labels">
+                    <label >Department</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Department</mat-label>
+                        <input matInput placeholder="Department" formControlName="department">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="rows">
+                <div  class="labels">
+                    <label >Salary</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Salary</mat-label>
+                        <input matInput placeholder="Salary" formControlName="salary">
+                    </mat-form-field >
+                </div>
+            </div>
+            <div class="rows">
+                <div  class="labels">
+                    <label >Start Date</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Start Date</mat-label>
+                        <input matInput placeholder="Start date" formControlName="startDate">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="rows">
+                <div  class="labels">
+                    <label>Notes</label>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Notes</mat-label>
+                        <input matInput placeholder="notes" formControlName="notes">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="btns">
+                <div>
+                    <button mat-flat-button color="accent" class="btn">Cancel</button>
+                </div>
+                <div class="btn-right">
+                    <button mat-flat-button type="submit" color="primary" class="btn">Submit</button>
+                    <button mat-flat-button color="warn" class="btn">Reset</button>
+                </div>
+            </div>
+        </form>
+    </mat-card>
+</div>
